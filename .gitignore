@@ -1,1 +1,53 @@
-# initial commit..
+# ---------------------------------------
+# PYTHON ENVIRONMENTS
+# ---------------------------------------
+venv/
+.env/
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---------------------------------------
+# BUILD / COMPILATION ARTIFACTS
+# ---------------------------------------
+build/
+dist/
+*.so
+*.dll
+*.dylib
+
+# ---------------------------------------
+# LLAMA.CPP SPECIFIC
+# ---------------------------------------
+llama.cpp/build/
+llama.cpp/bin/
+llama.cpp/gguf/
+llama.cpp/*.gguf
+llama.cpp/.cache/
+
+# Prevent committing llama.cpp repo history
+llama.cpp/.git/
+
+# Model weights (VERY important)
+*.bin
+*.gguf
+*.pth
+*.pt
+
+# ---------------------------------------
+# EDITOR / IDE FILES
+# ---------------------------------------
+.idea/
+.vscode/
+
+# JetBrains
+*.iml
+
+# ---------------------------------------
+# SYSTEM FILES
+# ---------------------------------------
+.DS_Store
+Thumbs.db
